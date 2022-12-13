@@ -9,7 +9,7 @@ const createArray = (s, n, m) => Array.from({ length: s }, () => Math.floor(Math
 
 const arrResult = createArray(s, n, m);
 
-const data = arrResult;
+
 
 const getNumbersByParity = (data, parity) => {
 	let even = [];
@@ -23,23 +23,19 @@ const getNumbersByParity = (data, parity) => {
 		}
 	}
 
-	// if (parity === 'even') {
-	// 	return even;
-	// } else if (parity === 'odd') {
-	// 	return odd;
-	// } else {
-	// 	console.log('укажите "even" или "odd"');
-	// }
-
 	if (parity === 'even') {
 		return even;
-	} else {
-		return odd;
 	}
+	 if (parity === 'odd') {
+		return odd;
+	} else {
+		console.log('укажите "even" или "odd"');
+	}
+
 };
 
 
 console.log(arrResult);
-console.log(getNumbersByParity(data));
+console.log(getNumbersByParity(arrResult, option));
 
 
